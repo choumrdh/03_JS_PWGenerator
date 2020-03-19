@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Password Generator</title>   
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles.css">
+    
+</head>
+<body>
+    <nav class="navbar flex-column flex-md-row bg-info">
+        <a class="navbar-brand text-white" href="./index.html">Michelle's Random Password Generator</a>
+    </nav>
+    
+    <div class="container">
+        <div class="header text-center text-primary">
+            <h1>Password Generator</h1>
+        </div>
+        <div class="card card-detail">
+            <div class="card-header bg-dark text-white">
+                <h2>Generate a Password</h2>
+            </div>
+            <div class="card-body">
+                <textarea
+                readonly
+                id="password"
+                placeholder="Your Secure Password"
+                aria-label="Generated Password"
+               rows="5"></textarea>
+            </div>
+            <div class="card-action card-footer bg-dark text-center">
+                <button id="generate" class=" btn btn-primary" onclick="">Generate</button>
+                <div id="length"></div>
+            </div>
+            <div class="previous_password">
+                <b class="text-info">Previously Generated Password</b>
+                <br/>
+                <div id="lastPassword"></div>
+            </div>
+        </div>
+
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>

@@ -1,2 +1,2 @@
 # 03_JS_PWGenerator
-Random Password Generator
+A Random Password Generator made by me with a lot of help from tutors and friends. Also, came up with some feature from youTube video. 
