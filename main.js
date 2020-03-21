@@ -50,32 +50,32 @@ function generatePassword() {
   var number = ["0","1","2","3","4","5","6","7","8","9"] ;
   var special = ["`","~", "!", "@", "#", "$", "%", "^", "&", "*", "(", ")", "-", "+", ".", "?"];
 
-  if (passwordUpperCase === true){
+  if (passwordUpperCase){
     for(var i=0; i < letterUpper.length; i++ ){
       master.push(letterUpper[i])
     }
   } 
   
-  if (passwordLowerCase === true){
+  if (passwordLowerCase){
     for(var i=0; i < letterLower.length; i++){
       master.push(letterLower[i])
     }
   } 
   
-  if (passwordNumber === true){
+  if (passwordNumber){
     for(var i=0; i < number.length; i++){
       master.push(number[i])
     }
   }
 
-  if(passwordSpecialCharacter === true) {
+  if(passwordSpecialCharacter) {
     for(var i=0; i < special.length; i++){
       master.push(special[i])
     }
   }
   
   for(var i = 0; i < parseInt(passwordLength); i++){
-    var randomIndex = Math.floor( Math.random()* (master.length -1))
+    var randomIndex = Math.floor( Math.random()* (master.length))
     password = password + master[randomIndex]
   }
   console.log(password);
